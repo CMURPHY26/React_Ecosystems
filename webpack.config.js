@@ -26,7 +26,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'dist/'),
-        public: '/dist/',
+        publicPath: '/dist/',
         filename: 'bundle.js'
     },
     devServer: {
@@ -36,4 +36,4 @@ module.exports = {
         hotOnly: true
     },
     plugins: [new webpack.HotModuleReplacementPlugin()]
-}
+};
